@@ -1,22 +1,16 @@
-#
-#  Be sure to run `pod spec lint Database.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
+
 
 Pod::Spec.new do |s|
 
 
   s.name         = "Database"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "基于FMDB的二次分装"
   s.description  = <<-DESC
           基于FMDB的二次分装，基于FMDB的二次分装
                    DESC
 
-  s.homepage     = "http://EXAMPLE/Database"
+  s.homepage     = "https://github.com/xialun/SCDatabase"
 
   s.license      = "MIT"
 
@@ -29,18 +23,14 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes/*.{h,m}"
 
-
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-
+  s.frameworks   = "UIKit","Foundation"
 
 
    s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    s.dependency 'FMDB', '~> 2.7.2'
+
+   s.dependency 'FMDB', '~> 2.7.2'
 
 end
